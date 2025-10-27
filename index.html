@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Navdurga Ashram Donation Portal</title>
+  <style>
+    :root{--bg:#7a1f0f;--card:#fff7ed;--accent:#d49a00;--muted:#fff3e6}
+    *{box-sizing:border-box}
+    body{font-family:"Noto Sans Devanagari", Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; margin:0; background:linear-gradient(180deg,#b33 0%,#8a1f0f 60%); color:var(--muted)}
+    .container{max-width:980px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#f6c85f,#d78a00);display:flex;align-items:center;justify-content:center;color:#6b2b00;font-weight:700;font-size:20px}
+    h1{margin:0;color:#ffd77a}
+    p.lead{color:rgba(255,255,255,0.9);margin:8px 0 20px}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.25);color:#3b2b1a}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff;font-weight:700}
+    .secondary{background:#ffe8c9;color:#6b2b00}
+    .methods{display:flex;flex-direction:column;gap:12px}
+    .small{font-size:0.95rem;color:#5b3b2a}
+    footer{margin-top:18px;color:rgba(255,255,255,0.9);font-size:0.95rem;text-align:center}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}} 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🔱</div>
+      <div>
+        <h1>NAVDURGA ASHRAM</h1>
+        <p class="lead">Navdurga Ashram, Nagpur — Spiritual & Social Service Organization</p>
+      </div>
+    </header>
+
+    <main class="grid" role="main">
+      <section>
+        <div class="card">
+          <h2>Donate — दान करें</h2>
+          <p class="small">आपका दान हमारी आध्यात्मिक और सामाजिक सेवा गतिविधियों (भोजन, शिक्षा, स्वास्थ्य) में मदद करता है। आपका सहयोग हमारा उत्साह बढ़ाता है — धन्यवाद!</p>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h3>Our Causes — हमारे कार्य</h3>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-top:12px">
+            <div>
+              <strong>भोजन अभियान / Food Drive</strong>
+              <div class="small">जरूरतमंदों को रोजाना भोजन वितरण</div>
+            </div>
+
+            <div>
+              <strong>शिक्षा सहायता / Education Support</strong>
+              <div class="small">बच्चों के लिए ट्यूशन और स्टेशनरी</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>About — हमारे बारे में</h3>
+          <p class="small">Navdurga Ashram, Nagpur में हम आध्यात्मिक शिक्षा के साथ-साथ सामाजिक सेवा पर भी कार्य करते हैं। हमारे प्रमुख कार्यों में भोजन वितरण, मुफ्त शिक्षा सहायता और स्वास्थ्य शिविर शामिल हैं। हमारा लक्ष्य स्थायी और पारदर्शी सहायता प्रदान करना है ताकि कम संसाधन वाले परिवारों के जीवन में स्थायी परिवर्तन आ सके।</p>
+        </div>
+
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>दान के तरीके — Ways to Donate</h3>
+          <div class="methods">
+            <div>
+              <strong>1) PayPal / Card</strong>
+              <p class="small">PayPal/Card से दान करने के लिए (यदि उपलब्ध) — नीचे बटन में PayPal लिंक लगाएँ।</p>
+              <a class="btn" href="#" target="_blank" rel="noopener">Donate via PayPal</a>
+            </div>
+
+            <div>
+              <strong>2) Razorpay (India)</strong>
+              <p class="small">Razorpay चेकआउट का उपयोग करें — Key ID और Server order आवश्यक।</p>
+              <button class="btn secondary" id="rzp-button">Razorpay से दान करें</button>
+            </div>
+
+            <div>
+              <strong>3) UPI (QR / ID)</strong>
+              <p class="small">UPI आईडी: <strong>navdurgajyotishanushthankendra@okhdfcbank</strong></p>
+              <!-- QR image file included in package -->
+              <img src="navdurga_upi_qr.png" alt="UPI QR" style="max-width:100%;border-radius:8px;margin-top:8px">
+              <p class="small" style="margin-top:6px;">UPI QR को स्कैन करें</p>
+            </div>
+
+            <div>
+              <strong>4) Bank Transfer / बैंक से सीधे</strong>
+              <p class="small">Account Name: <strong>RITESHKUMAR MAHESH TIWARI</strong><br>
+              Account Number: <strong>20550110014028</strong><br>
+              IFSC: <strong>UCBA0002055</strong><br>
+              Branch: <strong>UCO Bank, MID Corporate Branch, Plot No. 9</strong></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h4>Contact — संपर्क</h4>
+          <p class="small">Phone / फ़ोन: 8421409127 / 9307236987<br>Email: contact@navdurga.org (replace as needed)</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Navdurga Ashram — धन्यवाद आपके सहयोग के लिए
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('rzp-button').addEventListener('click', function(e){
+      alert('Razorpay checkout: please configure your Razorpay key and order on server.');
+    });
+  </script>
+</body>
+</html>
